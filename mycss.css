@@ -1,0 +1,320 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.nav-head {
+  flex-basis: 1;
+}
+
+
+
+.nav-links{
+  /* flex: 1; */
+  text-align: right;
+}
+
+.header{
+    min-height: 70vh;
+    width: 100%;
+    background-color: #000000;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.navbar {
+  width: 90%;
+  display: flex;
+  top: 0;
+  position: fixed;
+  background-color: black;
+  backdrop-filter: blur(10px);
+  background-position: center;
+  background-size: cover;
+}
+
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img{
+  width: 199px;
+}
+
+
+.nav-links ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+.nav-links ul li a{
+  color: skyblue;
+  text-decoration: none;
+}
+
+.nav-links ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #FF0000;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+
+.text-box{
+  width: 90%;
+  color: #FFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+
+.text-box h1{
+  font-size: 62px;
+}
+
+.text-box p{
+  margin: 10px 0 40px;
+  color: lightslategrey;
+}
+
+.category {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-btn{
+  display: block;
+  text-decoration: none;
+  /*color: #FFF;
+  border: 1px solid #FFF;
+  padding: 12px 34px;
+  font-size: 13px;
+  background-color: inherit; */
+  margin: 30px;
+  color: grey;
+  font-size: 20px;
+  position: relative;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.hero-btn:hover{
+  /* border: 1px solid #F44336; */
+  /* background: #F44336; */
+  color: #F44336;
+  font-size: 30px;
+  transition: 0.4s;
+}
+
+.myclass{
+    min-height: 100vh;
+    width: 70%;
+    margin: auto;
+    background-image: url(mydesktop.png);
+    border-radius: 20px;
+    background-size: contain;
+    background-color: black;
+    background-repeat: no-repeat;
+}
+
+.content{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.hdn{
+  color: #777;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.row{
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.media{
+  flex-basis: 31%;
+  background: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 05s;
+}
+
+h3{
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+
+
+/*Mobile web responsive */ 
+@media screen and (max-device-width: 600px) {
+  body {
+    background-color: black;
+  }
+
+  .text-box h1{
+    font-size: 40px;
+  }
+
+
+  .header {
+    background-color: black;
+    margin-bottom: 160px;
+  }
+  .text-box{
+    background-color: black;
+    margin-top: 120px;
+    width: 90%;
+    /* color: #FFF; */
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  
+  
+  .text-box p{
+    margin: 10px 0 40px;
+    color: lightslategrey;
+    font-size: 12px;
+  }
+  
+  .category {
+    display: block;
+    justify-content: center;
+  }
+  
+  .hero-btn{
+    display: block;
+    text-decoration: none;
+    margin: 30px;
+    color: grey;
+    font-size: 20px;
+    position: relative;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  
+  .hero-btn:hover{
+    /* border: 1px solid #F44336; */
+    /* background: #F44336; */
+    color: #F44336;
+    font-size: 30px;
+    transition: 0.4s;
+  }
+  
+  .myclass{
+      width: 100%;
+      margin: auto;
+      min-height: 250px;
+      background-image: url(mydesktop.png);
+      border-radius: 5px;
+      background-size: contain;
+      background-color: black;
+      background-repeat: no-repeat;
+  }
+
+  .content{
+    width: 95%;
+    margin: auto;
+    margin-left: 2.5%;
+    text-align: center;
+    padding-top: 100px;
+  }
+  
+  
+  .row{
+    margin-top: 5%;
+    display: block;
+  }
+  
+  .media{
+    width: 100%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 05s;
+  }
+  
+  h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+  }
+  
+}
+
+@media screen and (min-device-width: 700px) { 
+  .text-box h1{
+    font-size: 62px;
+  }
+
+  nav .fa{
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  hero-btn .fa{
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+    border: 1px solid #FFF;
+    padding: 12px 34px;
+    font-size: 13px;
+    background-color: inherit;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .myclass{
+    min-height: 100vh;
+    width: 70%;
+    margin: auto;
+    background-image: url(mydesktop.png);
+    border-radius: 20px;
+    background-size: contain;
+    background-color: black;
+    background-repeat: no-repeat;
+}
+
+}
+
+
+.foot {
+  bottom: 0;
+  text-align: left;
+  font-size: 12px;
+  color: gray;
+  margin: 0 10%;
+  padding: 10px;
+}
+
